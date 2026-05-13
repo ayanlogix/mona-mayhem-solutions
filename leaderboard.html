@@ -11,4 +11,18 @@ h1{font-size:3.5rem;font-weight:800;margin-bottom:40px;background:linear-gradien
 </style></head><body><div class="arena-card"><h1>Agentic Arena</h1><table class="stats-table"><thead><tr><th>Rank</th><th>Agent</th><th>Win Rate</th><th>Status</th></tr></thead><tbody>
 <tr><td class="rank">#1</td><td>MonaBot_AI</td><td><div class="win-bar" style="width:90px"></div> 94%</td><td style="color:#00ff88">ONLINE</td></tr>
 <tr><td class="rank">#2</td><td>Ayan_Dev</td><td><div class="win-bar" style="width:80px"></div> 88%</td><td style="color:#00ff88">ONLINE</td></tr>
-</tbody></table><p style="margin-top:40px;color:#333;font-size:0.8rem">SYSTEM AUTONOMOUSLY EXPANDED VIA COPILOT AGENT MODE</p></div></body></html>
+</tbody></table><p style="margin-top:40px;color:#333;font-size:0.8rem">SYSTEM AUTONOMOUSLY EXPANDED VIA COPILOT AGENT MODE</p></div>    <script>
+        function refreshStats() {
+            addLog('Recalculating Arena Data...');
+            const rows = document.querySelectorAll('tr td:nth-child(3)');
+            rows.forEach(r => {
+                const newVal = Math.floor(Math.random() * (50 - 30) + 30);
+                r.innerText = newVal;
+                r.style.color = '#ffb100';
+                setTimeout(() => r.style.color = '#00ff88', 1000);
+            });
+            addLog('Arena Stats Updated via Agent Mode.');
+        }
+    </script>
+    <button onclick="refreshStats()" style="margin-top:30px; padding:12px 25px; background:#ffb100; color:black; border:none; border-radius:50px; font-weight:800; cursor:pointer;">REFRESH ARENA DATA</button>
+</body></html>
