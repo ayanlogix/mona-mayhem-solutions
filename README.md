@@ -1,14 +1,14 @@
-# 🚀 Mona Mayhem Solutions Hub
+# 🚀 Premium Hackathon Project
 
-A master repository containing technical blueprints and agentic automation solutions for the Arena.
+## 🛠️ Technical Skills Implemented
+* Copilot Plan Mode
+* Copilot Agent Mode
 
-## 🛠️ Built With
-* GitHub Copilot
-* Modern Web Technologies
-* AI-Powered Workflows
+## ⚙️ Technical Proof
+Architected the Arena system using Plan Mode and used Agent Mode to autonomously implement the persistent leaderboard logic.
 
 ## 🚀 Deployment
-This project is live via HTMLPreview!
+Live Preview available via HTMLPreview!
 
 ---
-Built for **MLH GenAI Hack Week 2025** 🏆
+🏆 Built for **MLH GenAI Hack Week 2025**
