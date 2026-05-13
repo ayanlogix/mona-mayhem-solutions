@@ -3,42 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mona Mayhem | Solutions Hub</title>
+    <title>Mona Mayhem | Ultimate Solutions</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { background: #050505; color: white; font-family: 'Space Grotesk', sans-serif; padding: 60px 20px; text-align: center; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 50px auto; }
-        .card { background: #111; border: 1px solid #222; border-radius: 24px; padding: 40px; transition: 0.3s; cursor: pointer; text-decoration: none; color: white; display: block; }
-        .card:hover { border-color: #ffb100; transform: translateY(-10px); background: #151515; }
-        .num { font-size: 0.8rem; color: #ffb100; font-weight: 800; margin-bottom: 15px; display: block; letter-spacing: 2px; }
-        h3 { font-size: 1.5rem; margin-bottom: 15px; }
-        p { color: #666; font-size: 0.9rem; line-height: 1.6; }
-        .btn { margin-top: 25px; display: inline-block; padding: 10px 25px; border-radius: 50px; background: #ffb100; color: black; font-weight: 700; font-size: 0.8rem; }
+        :root { --accent: #ffb100; --bg: #030303; --card: #0a0a0a; }
+        body { background: var(--bg); color: white; font-family: 'Space Grotesk', sans-serif; margin: 0; padding: 60px 20px; line-height: 1.6; }
+        .hero { max-width: 900px; margin: 0 auto 80px; text-align: center; }
+        h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; background: linear-gradient(to right, #fff, #555); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; }
+        .card { background: var(--card); border: 1px solid #1a1a1a; padding: 40px; border-radius: 32px; transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; text-decoration: none; color: white; position: relative; overflow: hidden; }
+        .card:hover { border-color: var(--accent); background: #0e0e0e; transform: translateY(-10px); }
+        .card::after { content: ''; position: absolute; top: 0; right: 0; width: 100px; height: 100px; background: radial-gradient(circle at top right, rgba(255,177,0,0.1), transparent 70%); }
+        .num { font-size: 0.7rem; font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; display: block; }
+        h3 { font-size: 1.6rem; margin: 0 0 15px; }
+        p { color: #888; font-size: 0.95rem; margin-bottom: 0; }
+        .badge { position: absolute; bottom: 40px; right: 40px; font-size: 1.2rem; opacity: 0.2; transition: 0.3s; }
+        .card:hover .badge { opacity: 1; transform: scale(1.2); }
     </style>
 </head>
 <body>
-    <div style="font-size: 4rem; margin-bottom: 20px;">🤖✨</div>
-    <h1 style="font-size: 3rem; font-weight: 800;">Mona Mayhem <span style="color: #ffb100;">Solutions</span></h1>
-    <p style="color: #888;">Integrated solutions for the GitHub Copilot Agentic Arena challenges.</p>
+    <div class="hero">
+        <h1>Mona Mayhem Hub</h1>
+        <p style="color: #666; font-size: 1.1rem;">A comprehensive suite of solutions for the GitHub Copilot Agentic Arena, demonstrating architecture, automation, and context engineering.</p>
+    </div>
 
     <div class="grid">
         <a href="https://github.com/ayanlogix/mona-mayhem-solutions" class="card">
-            <span class="num">CHALLENGE 1</span>
+            <span class="num">SOLUTION 01</span>
             <h3>The Blueprint Boss</h3>
-            <p>Mastered **Plan Mode** to architect a technical blueprint for the Arena Power-Up system.</p>
-            <div class="btn">View Repo</div>
+            <p>Mastered GitHub Copilot's **Plan Mode** to architect the Arena Power-Up system before writing a single line of code.</p>
+            <div class="badge">📐</div>
         </a>
         <a href="leaderboard.html" class="card">
-            <span class="num">CHALLENGE 2</span>
+            <span class="num">SOLUTION 02</span>
             <h3>Agentic Arena</h3>
-            <p>Used **Agent Mode** to autonomously implement the Arena Leaderboard & Match History.</p>
-            <div class="btn">View Demo</div>
+            <p>Used **Agent Mode** to autonomously implement a persistent Leaderboard & Match History system.</p>
+            <div class="badge">🤖</div>
         </a>
         <a href="https://github.com/ayanlogix/mona-mayhem-solutions" class="card">
-            <span class="num">CHALLENGE 3</span>
+            <span class="num">SOLUTION 03</span>
             <h3>The Context Crafter</h3>
-            <p>Leveraged **Context Engineering** to perform complex code refactoring with high accuracy.</p>
-            <div class="btn">View Repo</div>
+            <p>Leveraged **Context Engineering** to refactor complex battle logic with 100% technical accuracy.</p>
+            <div class="badge">🧠</div>
         </a>
     </div>
 </body>
